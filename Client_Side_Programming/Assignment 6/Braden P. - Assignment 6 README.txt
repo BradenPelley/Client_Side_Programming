@@ -1,0 +1,20 @@
+Braden P.  
+Student Expense Analyzer  
+
+Description:
+This program tracks and analyzes weekly student expenses using JavaScript arrays. It demonstrates how to create arrays of objects, iterate through them, and use map, filter, and reduce to transform, select, and calculate data.
+
+Callback Function Explanation:
+
+A callback function is a function that is passed into another function as an argument. The outer function then calls (executes) that function later.
+
+In this program, callback functions are used inside:
+
+-forEach()
+-map()
+-filter()
+-reduce()
+
+For example: in map, we pass a function that takes each expense and returns a new modified version of it. The map method runs that function once for every item in the array.
+
+Why does map, filter, and reduce need callback functions?: They need callback functions because they do not know what operation we want to perform. The callback tells them exactly what to do with each item in the array.
