@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Small Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Simple Grocery Store</h1>
+
+    <div class="store">
+
+        <div class="item">
+            Milk ($3.99)
+            <input type="number" id="milk" min="0" value="0">
+        </div>
+
+        <div class="item">
+            Bread ($2.49)
+            <input type="number" id="bread" min="0" value="0">
+        </div>
+
+        <div class="item">
+            Eggs ($4.99)
+            <input type="number" id="eggs" min="0" value="0">
+        </div>
+
+        <div class="item">
+            Banana ($5.99)
+            <input type="number" id="rice" min="0" value="0">
+        </div>
+
+        <div class="item">
+            Apples ($3.49)
+            <input type="number" id="apples" min="0" value="0">
+        </div>
+
+        <div class="item">
+            Steak ($14.99)
+            <input type="number" id="chicken" min="0" value="0">
+        </div>
+
+        <br>
+
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <button onclick="printReceipt()">Print Receipt</button>
+        <button onclick="resetCart()">Reset Cart</button>
+
+        <h2>Total: $<span id="total">0.00</span></h2>
+
+        <pre id="receipt"></pre>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

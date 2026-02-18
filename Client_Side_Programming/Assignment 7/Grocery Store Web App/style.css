@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.store {
+    max-width: 500px;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#receipt {
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    min-height: 150px;
+}
