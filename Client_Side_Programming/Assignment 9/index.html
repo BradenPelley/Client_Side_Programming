@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--This declares this document as a HTML5 document-->
+<html lang="en">
+<head>
+  <!--This sets the character encoding so special characters can display correctly-->
+  <meta charset="UTF-8" />
+
+  <!--This makes the layout responsive on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--This is the title shown in the browser tab-->
+  <title>Green Basket Grocery</title>
+
+  <!--This links the external CSS file for styling-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!--When the page loads, the startTimer() starts to run to begin inactivity tracking-->
+<body onload="startTimer()">
+
+  <!--The header section contains branding and store name-->
+  <header class="header">
+    <div class="header-inner">
+
+      <!--This shows the brand area (the logo and the name)-->
+      <div class="brand">
+        <!--This shows the simple text logo-->
+        <div class="logo">GB</div>
+        <div>
+          <h1>Green Basket Grocery</h1>
+          <p class="tagline">Fresh picks, simple checkout</p>
+        </div>
+      </div>
+
+      <!--This adds a small badge to show that this is a demo-->
+      <div class="badge">Demo Store</div>
+    </div>
+  </header>
+
+  <!--This is the main content container-->
+  <main class="container">
+
+    <!--The first card contains the shopping interface-->
+    <section class="card">
+      <h2>Shop Items</h2>
+
+      <!--This gives instruction text for the user-->
+      <p class="hint">
+        Enter quantities, then calculate or print your receipt. 
+        Inactivity resets after 15 seconds.
+      </p>
+
+      <!--This displays a grid layout for product items-->
+      <div class="grid">
+
+        <!--Each '.item' represents one product-->
+        <!--Input uses 'oninput' to restart inactivity timer whenever user types-->
+
+        <div class="item">
+          <div class="item-info">
+            <div class="item-name">Milk</div>
+            <div class="item-price">$3.50</div>
+          </div>
+          <input type="number" id="milk" value="0" min="0" oninput="startTimer()" />
+        </div>
+
+        <!--The same structure is repeated for each product-->
+        <!--Each input has a unique id so JavaScript can read its value-->
+
+        <!--Bread-->
+        <div class="item">
+          <div class="item-info">
+            <div class="item-name">Bread</div>
+            <div class="item-price">$2.25</div>
+          </div>
+          <input type="number" id="bread" value="0" min="0" oninput="startTimer()" />
+        </div>
+
+        <!--Eggs-->
+        <div class="item">
+          <div class="item-info">
+            <div class="item-name">Eggs</div>
+            <div class="item-price">$4.10</div>
+          </div>
+          <input type="number" id="eggs" value="0" min="0" oninput="startTimer()" />
+        </div>
+
+        <!--Rice-->
+        <div class="item">
+          <div class="item-info">
+            <div class="item-name">Rice</div>
+            <div class="item-price">$6.00</div>
+          </div>
+          <input type="number" id="rice" value="0" min="0" oninput="startTimer()" />
+        </div>
+
+        <!--Apples-->
+        <div class="item">
+          <div class="item-info">
+            <div class="item-name">Apples</div>
+            <div class="item-price">$2.80</div>
+          </div>
+          <input type="number" id="apples" value="0" min="0" oninput="startTimer()" />
+        </div>
+
+        <!--Chicken-->
+        <div class="item">
+          <div class="item-info">
+            <div class="item-name">Chicken</div>
+            <div class="item-price">$9.50</div>
+          </div>
+          <input type="number" id="chicken" value="0" min="0" oninput="startTimer()" />
+        </div>
+
+      </div>
+
+      <!--Action buttons-->
+      <div class="actions">
+
+        <!--This calls a JavaScript function to calculate the total-->
+        <button class="btn primary" onclick="calculateTotal()">Calculate Total</button>
+
+        <!--This calls a JavaScript function to generate a receipt-->
+        <button class="btn" onclick="printReceipt()">Print Receipt</button>
+
+        <!--This resets the cart manually-->
+        <button class="btn danger" onclick="resetCart('Cart reset.')">Reset Cart</button>
+
+        <!--This displays the total amount-->
+        <div class="total-box">
+          <span class="total-label">Total</span>
+          <!--JavaScript updates this span dynamically-->
+          <span id="total" class="total-value">$0.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!--The second card shows the receipt output-->
+    <section class="card">
+      <div class="receipt-head">
+        <h2>Receipt</h2>
+        <span class="small-note">
+          Tip: do nothing for 15 seconds to see the inactivity reset message.
+        </span>
+      </div>
+
+      <!--The code '<pre>'' preserves formatting for the receipts text-->
+      <pre id="receipt" class="receipt">Ready.</pre>
+    </section>
+
+  </main>
+
+  <!--Footer section-->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>Green Basket Grocery, Halifax, NS</span>
+      <span class="muted">Training demo</span>
+    </div>
+  </footer>
+
+  <!--This links the JavaScript file at the bottom so the DOM loads first-->
+  <script src="script.js"></script>
+</body>
+</html>

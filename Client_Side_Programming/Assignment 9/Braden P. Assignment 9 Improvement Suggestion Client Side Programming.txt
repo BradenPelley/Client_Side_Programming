@@ -1,0 +1,25 @@
+Braden P.
+Professional Improvement Suggestion
+Improvement: Add Proper <label> Elements for Accessibility
+
+The Problem:
+The number input fields for each grocery item (Milk, Bread, Eggs, etc.) do not currently use associated <label> elements. While the page works visually, this can create accessibility issues for users who rely on screen readers or assistive technology. Without labels, assistive tools may not clearly communicate what each input field represents.
+
+Why This Matters:
+Accessibility is an important part of professional web development. Adding proper labels:
+-Improves accessibility for all users.
+-Follows web development best practices.
+-Makes the form easier to understand.
+-Makes the project more professional.
+-Even small improvements like this demonstrate attention to detail and industry standards.
+
+Improved Code Example
+
+Current version:
+<input type="number" id="milk" value="0" min="0" oninput="startTimer()" />
+
+Improved version:
+<label for="milk">Milk Quantity</label>
+<input type="number" id="milk" value="0" min="0" oninput="startTimer()" />
+
+The for attribute connects the label to the input field using the matching id, which allows screen readers to properly identify the purpose of the input.
