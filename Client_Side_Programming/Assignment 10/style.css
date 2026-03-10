@@ -1,0 +1,11 @@
+/*This removes the default margins so the canvas fills the entire screen.*/
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+}
+
+/*This makes the canvas behave like a full screen element.*/
+canvas {
+    display: block;
+}
