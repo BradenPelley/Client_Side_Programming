@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Braden P. Client Side Programming Midterm Project-->
+<!--Video Tutorial Selected: How To Create A Responsive Card Slider in HTML CSS & JavaScript Step-by-Step Turotial-->
+<!--Credit to: CodingNepal-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--This is linking the google fonts for the icons from the video-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+       
+        <!--This is linking the swiper JS CSS from the video-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <title>Card Slider HTML & CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/024/689/019/small/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-virtual-tunnel-warp-made-with-digital-code-data-flow-illustration-vector.jpg" alt="Card Image" class="card-image">
+                            <p class="badge designer">Designer</p>
+                            <h2 class="card-title">Creative UI/UX Design Principles for Modern Apps</h2>
+                            <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://www.codingtemple.com/wp-content/uploads/2025/04/download-4-1024x576.jpg" alt="Card Image" class="card-image">
+                            <p class="badge developer">Developer</p>
+                            <h2 class="card-title">Building Responsive Web Applications with JavaScript</h2>
+                            <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" alt="Card Image" class="card-image">
+                            <p class="badge marketer">Marketer</p>
+                            <h2 class="card-title">Digital Marketing Strategies for Online Growth</h2>
+                            <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://www.shutterstock.com/image-photo/hands-typing-on-laptop-programming-600nw-2480023489.jpg" alt="Card Image" class="card-image">
+                            <p class="badge gamer">Gamer</p>
+                            <h2 class="card-title">Top Gaming Trends and Esports in 2026</h2>
+                            <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg" alt="Card Image" class="card-image">
+                            <p class="badge editor">Editor</p>
+                            <h2 class="card-title">Video Editing Techniques for High-Quality Content</h2>
+                            <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!--This is linking the swiper JS script from the video-->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!--This is linking our Java Script file-->
+            <script src="script.js"></script>
+    </body>
+</html>
