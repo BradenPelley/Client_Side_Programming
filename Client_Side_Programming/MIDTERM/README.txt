@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=VUtJ7FWCfZA&list=PLpwngcHZlPadhRwryAXw3mJWX5KH3T
 The original tutorial demonstrates how to create a responsive slider using the Swiper.js library.
 
 My Improvement:
-I added an automatic sliding feature using Swiper’s auto play functionality. The cards now move every few seconds without user interaction. I also added a pause-on-hover feature. When the user hovers over the slider, the auto play stops, allowing them to focus on specific content.
+I added an automatic sliding feature using Swiper’s auto play functionality. The cards now move every few seconds without any user interaction. I also added a pause-on-hover feature, which stops the auto play when the user hovers over the slider. It allows them to focus on the specific content.
 
 What I Learned:
 -How to use the Swiper.js library.
